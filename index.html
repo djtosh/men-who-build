@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men Who Build</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        bronze: '#B8996C',
+                        cream: '#F5F2EB',
+                        charcoal: '#1C1C1C',
+                        warmgray: '#2A2A2A',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1C1C1C 0%, #2A2A2A 50%, #1C1C1C 100%);
+        }
+        .texture-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-charcoal text-cream">
+
+    <!-- Hero Section -->
+    <section class="hero-gradient relative min-h-screen flex items-center justify-center px-6">
+        <div class="texture-overlay absolute inset-0 pointer-events-none"></div>
+        <div class="relative z-10 max-w-4xl mx-auto text-center py-20">
+            <p class="text-bronze uppercase tracking-[0.3em] text-sm font-semibold mb-8">A Newsletter for Builders</p>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight mb-8 leading-[0.9]">
+                Men Who<br>Build
+            </h1>
+            <div class="w-16 h-px bg-bronze mx-auto mb-8"></div>
+            <p class="text-xl md:text-2xl text-cream/80 max-w-2xl mx-auto mb-12 leading-relaxed">
+                Awakening men to purpose through leadership, building, and fortitude.
+            </p>
+
+            <!-- Email Signup -->
+            <form action="https://formspree.io/f/mjgkndvr" method="POST" class="max-w-md mx-auto">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your email"
+                        required
+                        class="flex-1 px-5 py-4 bg-warmgray border border-cream/20 rounded text-cream placeholder-cream/40 text-lg focus:outline-none focus:border-bronze transition-colors"
+                    >
+                    <button
+                        type="submit"
+                        class="px-8 py-4 bg-bronze hover:bg-bronze/90 text-charcoal font-bold uppercase tracking-wider rounded transition-colors"
+                    >
+                        Subscribe
+                    </button>
+                </div>
+                <input type="hidden" name="source" value="men-who-build">
+            </form>
+        </div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section class="bg-cream text-charcoal py-24 px-6">
+        <div class="max-w-3xl mx-auto">
+            <p class="text-bronze uppercase tracking-[0.2em] text-sm font-semibold mb-6">The Truth</p>
+            <h2 class="text-3xl md:text-4xl font-black uppercase mb-8">No passive income fantasies.<br>No guru garbage.</h2>
+            <div class="space-y-6 text-lg text-charcoal/80 leading-relaxed">
+                <p>
+                    The world is full of noise. Influencers selling dreams. Algorithms pushing comfort. A culture telling men to shrink, to settle, to stop building.
+                </p>
+                <p>
+                    This isn't that.
+                </p>
+                <p>
+                    Men Who Build is for the ones who know there's more. Who feel the pull to create something real. To lead when it's hard. To stay in the fight when it would be easier to quit.
+                </p>
+                <p class="font-semibold text-charcoal">
+                    We build businesses. We build families. We build ourselves.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Pillars Section -->
+    <section class="bg-charcoal py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-12 md:gap-8">
+                <!-- Leadership -->
+                <div class="text-center md:text-left">
+                    <div class="w-12 h-px bg-bronze mb-6 mx-auto md:mx-0"></div>
+                    <h3 class="text-2xl font-black uppercase mb-4 tracking-tight">Leadership</h3>
+                    <p class="text-cream/70 leading-relaxed">
+                        Not titles. Not authority. The willingness to go first, take the hit, and shoulder responsibility when everyone else steps back.
+                    </p>
+                </div>
+
+                <!-- Building -->
+                <div class="text-center md:text-left">
+                    <div class="w-12 h-px bg-bronze mb-6 mx-auto md:mx-0"></div>
+                    <h3 class="text-2xl font-black uppercase mb-4 tracking-tight">Building</h3>
+                    <p class="text-cream/70 leading-relaxed">
+                        Businesses, teams, legacies. Creating something from nothing. The work that matters is rarely comfortable and never finished.
+                    </p>
+                </div>
+
+                <!-- Fortitude -->
+                <div class="text-center md:text-left">
+                    <div class="w-12 h-px bg-bronze mb-6 mx-auto md:mx-0"></div>
+                    <h3 class="text-2xl font-black uppercase mb-4 tracking-tight">Fortitude</h3>
+                    <p class="text-cream/70 leading-relaxed">
+                        The strength to endure. To get knocked down and get back up. To hold the line when holding the line is all you've got.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="bg-warmgray py-24 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-bronze uppercase tracking-[0.2em] text-sm font-semibold mb-6">What You Get</p>
+            <h2 class="text-3xl md:text-4xl font-black uppercase mb-12">Straight to your inbox.</h2>
+            <div class="grid sm:grid-cols-2 gap-8 text-left">
+                <div class="border-l-2 border-bronze pl-6">
+                    <h4 class="font-bold text-lg mb-2">Real Talk</h4>
+                    <p class="text-cream/70">Unfiltered thoughts on leadership, business, and what it takes to build something that matters.</p>
+                </div>
+                <div class="border-l-2 border-bronze pl-6">
+                    <h4 class="font-bold text-lg mb-2">Hard-Won Lessons</h4>
+                    <p class="text-cream/70">Insights from the trenches. What's working, what's not, and what I'm learning along the way.</p>
+                </div>
+                <div class="border-l-2 border-bronze pl-6">
+                    <h4 class="font-bold text-lg mb-2">No Fluff</h4>
+                    <p class="text-cream/70">Short, direct, worth your time. If I don't have something to say, I won't send it.</p>
+                </div>
+                <div class="border-l-2 border-bronze pl-6">
+                    <h4 class="font-bold text-lg mb-2">A Brotherhood</h4>
+                    <p class="text-cream/70">A community of men who refuse to coast. Builders. Leaders. Men in the arena.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="hero-gradient relative py-24 px-6">
+        <div class="texture-overlay absolute inset-0 pointer-events-none"></div>
+        <div class="relative z-10 max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-black uppercase mb-6">Join the Builders</h2>
+            <p class="text-xl text-cream/70 mb-10">
+                No spam. No selling. Just a weekly dose of truth for men who want more than comfort.
+            </p>
+
+            <!-- Email Signup -->
+            <form action="https://formspree.io/f/mjgkndvr" method="POST" class="max-w-md mx-auto">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your email"
+                        required
+                        class="flex-1 px-5 py-4 bg-warmgray border border-cream/20 rounded text-cream placeholder-cream/40 text-lg focus:outline-none focus:border-bronze transition-colors"
+                    >
+                    <button
+                        type="submit"
+                        class="px-8 py-4 bg-bronze hover:bg-bronze/90 text-charcoal font-bold uppercase tracking-wider rounded transition-colors"
+                    >
+                        Subscribe
+                    </button>
+                </div>
+                <input type="hidden" name="source" value="men-who-build">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal border-t border-cream/10 py-12 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <p class="text-cream/50 text-sm">&copy; 2026 Men Who Build. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <!-- X/Twitter -->
+                <a href="#" class="text-cream/50 hover:text-bronze transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <!-- Instagram -->
+                <a href="#" class="text-cream/50 hover:text-bronze transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
