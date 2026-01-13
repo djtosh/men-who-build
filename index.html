@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -78,9 +77,24 @@
             </div>
 
             <!-- Email Signup -->
-            <div class="mt-10 flex justify-center">
-                <iframe src="https://subscribe-forms.beehiiv.com/2d421baa-72b0-4fed-b829-a7e69ad0cb00" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" width="500" height="315" style="border: none; background-color: transparent;"></iframe>
-            </div>
+            <form action="https://formspree.io/f/mjgkndvr" method="POST" class="mt-10 max-w-md mx-auto">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your email"
+                        required
+                        class="flex-1 px-5 py-4 bg-charcoal border border-charcoal/20 rounded text-cream placeholder-cream/50 text-lg focus:outline-none focus:border-bronze transition-colors"
+                    >
+                    <button
+                        type="submit"
+                        class="px-8 py-4 bg-bronze hover:bg-bronze/90 text-charcoal font-bold uppercase tracking-wider rounded transition-colors"
+                    >
+                        Subscribe
+                    </button>
+                </div>
+                <input type="hidden" name="source" value="men-who-build">
+            </form>
         </div>
     </section>
 
@@ -154,9 +168,24 @@
             </p>
 
             <!-- Email Signup -->
-            <div class="flex justify-center">
-                <iframe src="https://subscribe-forms.beehiiv.com/2d421baa-72b0-4fed-b829-a7e69ad0cb00" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" width="500" height="315" style="border: none; background-color: transparent;"></iframe>
-            </div>
+            <form action="https://formspree.io/f/mjgkndvr" method="POST" class="max-w-md mx-auto">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your email"
+                        required
+                        class="flex-1 px-5 py-4 bg-warmgray border border-cream/20 rounded text-cream placeholder-cream/40 text-lg focus:outline-none focus:border-bronze transition-colors"
+                    >
+                    <button
+                        type="submit"
+                        class="px-8 py-4 bg-bronze hover:bg-bronze/90 text-charcoal font-bold uppercase tracking-wider rounded transition-colors"
+                    >
+                        Subscribe
+                    </button>
+                </div>
+                <input type="hidden" name="source" value="men-who-build">
+            </form>
         </div>
     </section>
 
